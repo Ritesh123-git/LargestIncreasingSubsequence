@@ -1,0 +1,24 @@
+I will approach this problem with the dynamic programming concept.
+
+for example you have an array of element  10  22  9  33  21  50  41  60  80  1
+
+Now I will create one array named as dp array and inside it index I will put the longest increasing subsequence upto that index.
+
+for example-----
+
+  10  22  9  33  21  50  41  60  80  1
+   |   |  |   |   |   |   |   |   |  |
+   |   |  |   |   |   |   |   |   |  |
+   1   2  1   3   2   4   4   5   6  1---------- this all are the value of increasing subsequence which will the end with the respective value present at that index.
+   
+
+  10  10  9  10   10  10  10  10  10 1
+      22     22   21  22  22  22  22
+             33       33  33  33  33
+                      50  41  50  50
+                              60  60
+                                  80
+
+Now out of them compare who is the maximum, who have the largest increasing subsequence.
+
+You will have your answer as 6.
